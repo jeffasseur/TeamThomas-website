@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.asset__planet {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.2em;
+    line-height: 77px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 140%;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+section{
+    height: 90vh;
+}
+
+header {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-family: 'Karla', sans-serif;
+    padding-top: 1em;
+}
+
+header .left {
+    max-width: 50%;
+    padding-left: 9em;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    align-items: flex-start;
+}
+
+header .right {
+    height: 85vh;
+    width: 40vw;
+    max-width: 40%;
+    background-color: blue;
+    background-image: url("../assets/JFV_TeamThomas_BTS-23.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button {
+    font-size: 1.2em;
+    padding: 10px 24px;
+    color: #F1EDE9;
+    background-color: #1400FF;
+    border: 1px solid #212529;
+    margin-top: 1.4em;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e5e5e5;
+    border-bottom: solid 1px #212529;
+}
+
+.main-nav__link {
+    padding: 24px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.main-nav__link:not(:first-of-type):active {
+    font-weight:600;
+}
+
+.main-nav__link:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1em;
+    padding: 20px 24px;
+}
+
+.main-nav__link:first-child span {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.logo {
+    max-height: 1.8em;
+}
+
+.mission {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 80% auto;
+    background-color: #FDF7F0;
+    ;
+    border: 1px solid #212529;
+}
+
+.mission-box{
+    grid-column: span 2;
+    border-bottom: 1px solid #212529;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission__txt {
+    font-weight: 500;
+    font-size: 2.2em;
+    line-height: 120%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.wie {
+    display: flex; 
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #212529;
+}
+
+.wie p {
+    font-size: 2.2em;
+    font-weight: 700; 
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* overflow-x: scroll; */
+}
+
+.member-box {
+    height: 100%;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+    display:inline-block;
+}
+
+.member-box h3 {
+    padding: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
+    max-width: 80%;
+}
+
+.inputform {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    align-items: start;
+    align-content: space-around;
+    background-color: #FDF7F0;
+
+}
+
+.formtitle, .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+
+.formtitle h2 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.6em;
+    line-height: 1.2em;
+    margin-bottom: 1em;;
+}
+
+.formtitle p {
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#email, #name, #message {
+    width: 100%;
+    padding: 1em 1em;
+    margin: 1em 0;
+    font-family: "Poppins";
+}
+
+#submit {
+    font-size: 1em;
+    color: #F1EDE9;
+    background-color: #1400FF;
+    border: 1px solid #212529;
+    padding: .8em 1.8em;
+    font-family: "Poppins";
+    justify-self: end;
+}
+
+.footer-box {
+    display: grid;
+    border: solid 1px black;
+    background-color: #FDF7F0;
+    grid-template-columns: 2fr 3fr;
+}
+
+.footer__left {
+    border-right: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6em;
+    background-image: url("../assets/Group.svg");
+    background-size: 3em;
+    background-position-x: 330px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
+
+.footer__left p {
+    margin: 2em 0;
+    max-width: 80%;
+    font-size: 1.6em;
+}
+
+.footer__left a {
+    margin: 2em 0;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6em;
+    background-image: url("../assets/Group-1.svg");
+    background-size: 3em;
+    background-position-x: 500px;
+    background-position-y: 300px;
+    background-repeat: no-repeat;
+
+}
+
+.footer__right .socials {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    padding-bottom: 4em;
+}
+
+.footer__right p {
+    font-size: .8em;
+    padding-top: 3em;
+}
+
